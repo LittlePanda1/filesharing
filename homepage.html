@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="Stylesheet" href="/filesharing/style/homepage.css">
+
+</head>
+<body>
+ <header>
+ <h1> HomePage File Sharing</h1>    
+</header>
+ <div class="container">
+    <div class="filemanager">
+        <h2 class="filelist">File list</h2>
+        <button id="uploadButton" onclick="showUploadForm()">Upload File</button>
+        <div id="uploadForm" style="display: none;">
+        <form action="/filesharing/upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="filetoUpload" id="filetoUpload">
+            <label for="description" id="desc">Description</label>
+            <input type="text" name="desc" id="desc">
+            <input type="submit" value="Upload" name="submit">
+        </form>
+        </div>
+       <table id="filetable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>ID</th>
+                <th>Nama File</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="filebody">
+
+        </tbody>
+    </table>
+    </div>
+ </div>
+</body>
+<script src="/filesharing/script/hpScript.js"></script>
+</html>
