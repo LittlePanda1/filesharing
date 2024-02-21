@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="Stylesheet" href="/filesharing/style/homepage.css">
+    <link rel="Stylesheet" href="/style/homepage.css">
 
 </head>
 <body>
@@ -16,7 +16,7 @@
         <h2 class="filelist">File list</h2>
         <button id="uploadButton" onclick="showUploadForm()">Upload File</button>
         <div id="uploadForm" style="display: none;">
-        <form action="/filesharing/upload.php" method="post" enctype="multipart/form-data">
+        <form action="/upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="filetoUpload" id="filetoUpload">
             <label for="description" id="desc">Description</label>
             <input type="text" name="desc" id="desc">
@@ -41,5 +41,5 @@
     </div>
  </div>
 </body>
-<script src="/filesharing/script/hpScript.js"></script>
+<script src="/script/hpScript.js"></script>
 </html>
