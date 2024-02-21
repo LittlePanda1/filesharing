@@ -5,10 +5,10 @@ $username = $_POST['usn'];
 $password = $_POST['pw'];
 
 if ($username === $valid_username && $password === $valid_password) {
-    header("Location: /filesharing/homepage.html");
+    header("Location: /homepage.html");
     exit();
 } else {
-    header("Location: /filesharing/index.html?error=1");
+    header("Location: /index.html?error=1");
     exit();
 }
 ?>
